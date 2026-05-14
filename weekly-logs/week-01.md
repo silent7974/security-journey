@@ -1,7 +1,7 @@
-# Week 01 — 14th April - 20th April 2026.
+# Week 01 : 14th April - 20th April 2026.
 
 ## What I covered
-- Professor Messer: Domain 1.1 – Social Engineering techniques
+- Professor Messer: Domain 1.1 - Social Engineering techniques
 - TryHackMe: Pre-Security path, Networking fundamentals room
 
 ## One concept I can now explain
