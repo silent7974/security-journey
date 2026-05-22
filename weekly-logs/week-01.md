@@ -7,7 +7,7 @@
 
 
 ## Most significant concept I learned
-Deception & disruption is a tactic used by security professionals to design or build fake assets in way that makes them look attractive, tricking an attacker into targeting those systems and costing them time and resources while they're quietly being identified. Honeypot is creating a fake device or system, a honeynet is building a network of honeypots (aims to target large number of attackers), honeyfile is dressing a fake file in real ones and making it more attractive (like passwords.txt) and honeytoken is creating fake credentials (like API tokens, database records) an authorized user will almost always have nothing to do with those credentials, who ever access them gets flagged as unauthorized.
+Deception & disruption is a tactic used by security professionals to design or build fake assets in a way that makes them look attractive, tricking an attacker into targeting those systems and costing them time and resources while they're quietly being identified. Honeypot is creating a fake device or system, a honeynet is building a network of honeypots (aims to target large number of attackers), honeyfile is dressing a fake file in real ones and making it more attractive (like passwords.txt) and honeytoken is creating fake credentials (like API tokens, database records) an authorized user will almost always have nothing to do with those credentials, who ever access them gets flagged as unauthorized.
 
 
 ## Most useful confusion I resolved
