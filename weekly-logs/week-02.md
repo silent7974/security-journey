@@ -1,9 +1,9 @@
 # Week 02: 22nd May – 4th June 2026
 
 ## What I covered this week
-Domain 1.3 (Change management; business processes, technical implications, documentation and version control), and partial 1.4 (PKI, encryption level and encryption types)
-TryHackMe pre-security path; section 1 complete and section 2 started
-Re-audits on 1st and 4th June
+- Domain 1.3 (Change management; business processes, technical implications, documentation and version control), and partial 1.4 (PKI, encryption level and encryption types)
+- TryHackMe pre-security path; section 1 complete and section 2 started
+- Re-audits on 1st and 4th June
 
 ## Most significant concept I learned
 Legacy applications are apps that are still running on outdated services or dependencies because using the later versions or updated ones are either costly, time consuming or complex to implement.
