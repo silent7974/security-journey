@@ -2,7 +2,7 @@
 
 ## What I covered this week
 - The rest of Domain 1.4 (Encryption tools, obfuscation, hashing & digital signatures, blockchain technologies and certificates)
-- TryHackMe pre-security path; 4 out of 5 tasks of "Intro to LAN"
+- TryHackMe pre-security path; "Intro to LAN"
 - Full Domain 1.4 Re-audit on 15th
 
 ## Most significant concept I learned
