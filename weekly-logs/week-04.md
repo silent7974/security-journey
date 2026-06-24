@@ -34,5 +34,5 @@ While hacktivists are the most common actors with the "philosophical/political b
 ## Next week focus
 - Domain 2.2 (self-audit and lessons)
 - Watch Messer on 2.2
-- TryHackMe Pre-Security Section 2 completed and 3 started (video walkthroughs - can't afford premium rooms yet)
+- TryHackMe Pre-Security Section 2 completed and 3 started via free rooms and walkthroughs
 - Minimum viable day: 20 minutes review is non-negotiable on hard days
