@@ -3,7 +3,7 @@
 Cybersecurity student working toward CompTIA Security+ (SY0-701).
 Documenting my learning process weekly: concepts, labs, and honest reflections.
 
-**Background**: Final-year cybersecurity student (4.20 CGPA), 
+**Background**: Final-year cybersecurity student (4.29 CGPA), 
 self-taught networking foundation, ethical hacking fundamentals, and hands-on penetration 
 testing on live vulnerable machines.
 Built a working e-commerce platform (Next.js, redux, Paystack integration), 
