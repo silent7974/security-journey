@@ -17,7 +17,7 @@ Mininum viable days: 19th, 24th
 Gap days: 20th, 23rd, 25th
 
 ### External factors affecting execution
-Malltiply operations and growth, family critics, identity crisis, school and academics (carry-over course, clearance and NYSC preparation). The 25th panic was caused by seeing dead and struggling platforms with similar names (Malltiple, Malltiply in Lagos) - "How is mine any different?", and family making a big deal of running errands and chores. Trying to think of SQLi and XSS definitions added more weight.
+Malltiply operations and growth, family critics, identity crisis, income work, school and academics (carry-over course, clearance and NYSC preparation). The 25th panic was caused by seeing dead and struggling platforms with similar names (Malltiple, Malltiply in Lagos) - "How is mine any different?", and family making a big deal of running errands and chores. Trying to think of SQLi and XSS definitions added more weight.
 
 ## Standout re-audit moment
 Clearly gaining depth from Messer lessons rather than just knowing concepts definitions - Pwn2Own 2017 VM escape chain, EOL vs EOSL, Reflected XSS vs Stored XSS, what a hypervisor is and it relation to the resource reuse escape, hardware vendors releasing patch updates yearly. 
