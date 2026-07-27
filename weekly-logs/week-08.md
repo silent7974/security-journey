@@ -1,4 +1,4 @@
-# Week 08: 18th July – 26th July 2026
+# Week 08: 18th July - 26th July 2026
 
 ## What I covered this week
 - Watched Messer: SQLi, XSS, Hardware, Virtualization, and Cloud-specific vulnerablities
