@@ -33,6 +33,7 @@ Needs sharpening (concepts are there but precision drifts): SQLi syntax, VM esca
 Non-retained(blank): Buffer overflow return address, EternalBlue, Mirai botnet.
 
 Corrections from re-audit:
+
 Buffer overflow return address: The attacker overwrites the return address on the stack, not another variable. By controlling where the program goes next, they redirect execution to their own malicious code. Variable-to-variable overflow (Messer's diagram) is the teaching example. Return address overwrite is the real attack.
 
 EternalBlue: NSA-developed Windows SMB exploit, leaked by Shadow Brokers in 2017, used by WannaCry ransomware to spread globally in hours. MS17-010 was the patch. One of the most famous OS vulnerabilities in history. 
