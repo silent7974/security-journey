@@ -11,9 +11,16 @@ The credit card breach - November, 2013 (the full picture): a phishing email was
 Resource reuse: thought the resource being reused are just details like emails, passwords, tokens. Resolved it: while those are correct, resource reuse is about any residual data - memory contents, disk storage, cached files from a previous VM that wasn't sanitized not just credentials. The risk is a new tenant assigned the same physical resources can recover whatever was left behind. Could be proprietary code, encryption keys, database fragments.
 
 ## Honest reflection on the week
-Planned the last 2-3 days of every month ending for recovery (a break from monthly executions and cognitive tasks) which was 29th-31st July, the 20-minutes review was supposed to survive those days but life hit with critical cold and fever which made it more harder. 2 days gap again due to morning drifts on the 2nd and 3rd August, and 4th was another school errand day. Watched Messer on the 27th and 28th, then full 2.3 re-audit on 1st August.
+Planned the last 2-3 days of every month ending for recovery (a break from monthly executions and cognitive tasks) which was 29th-31st July, the 20-minutes review was supposed to survive those days but life hit with critical cold and fever which made it harder. 2 days gap again due to morning drifts on the 2nd and 3rd August, and 4th was another school errand day. Watched Messer on the 27th and 28th, then full 2.3 re-audit on 1st August.
 
-Gap days: 29th-31st July, 2nd-4th August
+Planned recovery: 29th-31st July. 
+
+Gap days: 2nd-3rd August. 
+
+School: 4th August.
+
+## Standout re-audit moment
+Did a cold audit after 3 days of illness with no reviews and scored 68% with honest self-rating.
 
 ### External factors affecting execution
 Extended morning disruption on 2nd and 3rd August, affecting TryHackMe session and weekly log timing.
@@ -44,4 +51,4 @@ Mirai botnet: Not firmware. Mirai was a botnet that scanned the internet for IoT
 
 ## Next week focus
 - Domain 2.4 audit and lessons
-- Tryhackme module 2 initiation "Computer fundamentals" 
+- Tryhackme - Computer fundamentals
