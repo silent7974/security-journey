@@ -1,4 +1,4 @@
-# Week 08: 27th July - 5th August 2026
+# Week 09: 27th July - 5th August 2026
 
 ## What I covered this week
 - Watched Messer: supply chain, misconfiguration, mobile device and zero day vulnerabilities
