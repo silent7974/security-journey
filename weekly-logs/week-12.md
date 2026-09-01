@@ -5,11 +5,11 @@
 - Tryhackme (Computer fundamentals - Components & boot process)
 
 ## Honest reflection on the week
-Fever returning and affecting new lessons from almost the whole week (25th-31st), longer retention than week 7's typhoid and malaria. The combination of end-of-month planned recovery days and illness occurred twice now affecting minimum viable review (29th-31st). Though the review held most days; 23rd (new lessons affected by wifi sub expiring), 25th-28th (lessons affected by the fever). Resumed tryhackme after weeks (since week 6).
+Fever returning and affecting new lessons from almost the whole week (25th-31st), longer retention than week 7's typhoid and malaria. The combination of end-of-month planned recovery days and illness occurred twice now affecting minimum viable review (29th-31st). Though the review held most days; 23rd (new lessons affected by wifi sub expiring), 26th-28th (lessons affected by the fever). Resumed tryhackme on 24th after weeks (since week 6).
 
-Review days: 24th, 25th, 26th, 27th, 28th August
+Review days: 23rd, 26th, 27th, 28th August
 
-Gap days: 29th, 30th, 31st (planned recovery + fever)
+Gap days: 25th, 29th, 30th, 31st (planned recovery + fever)
  
 ## Next week focus
 - Messer on 2.4 - Cryptgraphic & password attacks, Indicators of compromise
