@@ -5,9 +5,8 @@
 - Tryhackme (Computer fundamentals - Components & boot process)
 
 ## Honest reflection on the week
-Fever returning and affecting new lessons from almost the whole week (25th-31st), longer retention than week 7's typhoid and malaria. The combination of end-of-month planned recovery days and illness occurred twice now affecting minimum viable review (29th-31st). 
+Fever returning and affecting new lessons from almost the whole week (25th-31st), longer retention than week 7's typhoid and malaria. The combination of end-of-month planned recovery days and illness occurred twice now affecting minimum viable review (29th-31st). Though the review held most days; 23rd (new lessons affected by wifi sub expiring), 25th-28th (lessons affected by the fever). Returned tryhackme 
  
 ## Next week focus
-- Watch the rest of Messer on 2.3
-- Complete tryhackme module 3
-- Domain 2.4 self-audit and lessons
+- Messer on 2.4 - Cryptgraphic & password attacks, Indicators of compromise
+- Tryhackme - Computer fundamentals continuation
