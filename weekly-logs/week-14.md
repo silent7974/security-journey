@@ -13,37 +13,41 @@ Emergency out-of-bound updates: patches that are issued outside the normal predi
 Had a problem differentiating mitigation techniques vs hardening techniques, confused their examples together as same scope - patching, endpoint protection, monitoring, segmentation, least privilege, isolation. Resolved it: mitigation techniques is the broader scope - actions or policies implemented to reduce organizational risk (least privilege, patching updates, segmentation, access control, monitoring, encryption, decommissioning, configuration enforcement). Hardening techniques are implemented to reduce the attack surface of individual systems or devices (disabling unused ports/services, removal of unnecessary software, configuring EDR or antivirus/antimalware, HIPS, host-based firewall - like Microsoft Firewall Defender). The core distinction is broader organization system protection vs individual system protection.
 
 ## Honest reflection on the week
-Fastest domain to complete (2.5) since domain 2.1 in **week-04.md**, everything covered in the same week unlike 2.2-2.4 
+Fastest domain to complete (2.5) since domain 2.1 in **week-04.md**, everything covered in the same week unlike 2.2-2.4 that took multiple weeks. External factors affecting real sessions + minimum viable reviews. On the 16th, did a research and provided insights/suggestions for a new venture (Aman - a deferred payments agreement management startup for my elder brother, positioned as the UI/UX designer, some funding unlike Malltiply, and opportunity to operate under CBN sandbox), a fulltime job that disrupted Messer session and if not careful might slow this path further (alongside Malltiply, morning disruptions and life). Then income work (Menu editing for a catering service business) throughout the entire evening blocking gap for a review. 
 
-Review days: 3rd, 8th & 9th 
+Review days: 14th & 15th
 
-Gap days: 2nd & 4th 
-
-School: 7th
+Gap days: 11th (social media scrolling drift), 12th (cousins visiting), & 16th
 
 ## Standout re-audit moment
-Overall 2.4 re-audit from Malware to indicators. 11 questions and got 6 without corrections. Gaps are mostly precision/mechanism-level, not conceptual misunderstanding.
+Overall 2.5 re-audit (same scenario-style) - 12 questions. Got 6 precise, 4 needed corrections and 2 blanks. Scope and precision of definition named as the root skill gap. 
 
 ### External factors affecting execution
-Unexpected water leak from room's ceiling, water scarcity, electricity insufficiency, health issues (stomach constipation), family interactions (errands and gist), Malltiply's related mixed feelings (cringe feeling), and the recurring extended morning disruption.
+Aman's activity (new venture), income work, cousins unexpected visit, social media drift, the recurring extended morning disruption
 
 ## Re-audit results
-Retained: Rootkit, fileless malware mechanism, offline cracking bypassing lockout, spraying vs brute force, lockout as pretext, indicator for spraying vs indicator for brute force 
+Retained: Segmentation/PCI DSS, ACL, self-lockout, emergency out-of-band, EDR vs traditional antivirus, heuristic analysis tradeoff
 
-Needs sharpening/non-retained: Amplified DDoS core mechanism, directory traversal root-cause, collision consequence, preimage attack, SSL stripping 
+Needs sharpening: SIEM's term ("correlation" not "cross-interaction logs"), enforcement methods for application allow list (certificate answer is narrow), decommissioning methods included, ACL category, EDR category reasoning
+
+Non-retained: NAC & NGFW
 
 Corrections from re-audit:
-Correctly named spoofing for reflected but dropped it for amplified. Amplification also relies on spoofing the victim's IP - that's why the large response goes to the victim instead of back to the attacker. "Multiple devices sending small requests" describes distribution, not amplification. The defining trait is: spoof victim's address → send small request to a third party → third party sends a disproportionately large response to the spoofed (victim) address. Size multiplication + spoofing, not device count.
+SIEM's term ("correlation" not "cross-interaction logs"): a SIEM can connect events across sources that look harmless individually but form an attack pattern together (a failed login on one system + a firewall alert + a file access on another, tied together by timestamp/user). That correlation capability, not just storage in one place, is the actual value proposition.
 
-"Freedom to navigate files with minimal inputs" isn't a technical cause, it's a restatement of the symptom. The real cause: missing input validation/sanitization on file path parameters - the application fails to strip or reject sequences like ../ before using user input to build a file path, so the attacker's input is trusted and executed literally.
+Certificate enforcement: Tied it specifically to "Microsoft, Google" as named companies — the actual concept is trusting any publisher whose certificate the organization has chosen to trust, not those two specifically. A company could trust its own internal code-signing certificate, or a smaller vendor's. The mechanism is "signed by a trusted publisher," not "signed by a big-name company."
 
-A collision isn't about "accessing permissions" - it's about breaking integrity/signature verification. If a malicious file hashes identically to a legitimate one, any system that checks integrity by comparing hashes gets fooled into treating the malicious file as verified/trusted. No permissions are being accessed via the hash itself; the danger is trust, not access.
+decommissioning methods included: correctly named decommissioning as the failed process, but the answer shouldn't stop at the label — what specifically should decommissioning have included here? Removing the device from the network, revoking its access/credentials, and wiping or destroying its data.
 
-Described preimage as "brute force with a list of hashes until granted access" - that's closer to generic password/credential cracking. Actual preimage attack: attacker is given one specific target hash and must find any input that produces that exact hash - no list, no "until access granted," just one fixed target. The real reason birthday is cheaper isn't "higher chance of success" (vague) - it's mathematical: preimage needs ~2^n attempts to hit one specific target, birthday only needs ~2^(n/2) because it's checking all pairs against each other, not against one fixed value.
+ACL category: ACL doesn't belong in hardening list. Segmentation and Access control (which includes ACLs) are listed as their own top-level items alongside patching/encryption/monitoring — separate from the "Hardening techniques" sub-bucket, which is specifically the single-device list (endpoint protection, host-based firewall, HIPS, port/protocol disabling, password changes, unnecessary software removal). ACL operates at the network/policy level, which makes it mitigation, not hardening.
 
-"Attacker tells the server the browser is now using https" is inaccurate - the attacker isn't telling the server anything, it's actually running a real HTTPS session with the server itself, while simultaneously feeding the victim's browser plain HTTP. The attacker is the genuine TLS endpoint from the server's perspective and a fake plaintext server from the browser's perspective - sitting as the man-in-the-middle on both connections at once, not lying to one side.
+NAC (Network Access Control): the scenario - posture check at login, quarantine to a restricted VLAN for non-compliant devices — is the textbook definition.
+
+NGFW: adds application-layer awareness - it can identify and control traffic by application, not just port/protocol, and typically bundles in IPS and threat-intelligence feeds. A traditional stateful firewall only inspects up through the transport layer; NGFW inspects what's actually running inside the traffic.
+
+EDR category reasoning: Self-correction on segmentation was right; the reasoning on EDR was off. Segmentation and access control are correctly mitigation, not hardening (network/policy scope). But EDR hardening reasoning — "because you're manually configuring it" — isn't the actual distinguishing logic. It's hardening because it protects one endpoint's attack surface, regardless of whether its response is manual or automated. 
 
 ## Next week focus
-- Domain 2.5 self-audit
-- Tryhackme - Computer fundamentals continuation
-- One concept-notes log
+- First-time practice exams from Domain 1-2 overall
+- Tryhackme - Computer fundamentals continuation (at least 2 rooms)
+- One concept-notes log (non-negotiable)
