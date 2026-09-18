@@ -1,19 +1,19 @@
-# Week 13: 2nd - 10th September 2026
+# Week 14: 11th - 18th September 2026
 
 ## What I covered this week
-- Messer videos - Cryptographic attacks, Password attacks, Indicators of compromise
-- Tryhackme Computer fundamentals - Computer types
-- Reviews on hard days (2.1, 2.2 & 2.4)
-- Overall 2.4 re-audit
+- Domain 2.5 cold-audit and lessons
+- Complete Messer videos on 2.5: Segmentation & Access control, Mitigation techniques, Hardening techniques
+- Review on hard days (2.1 & 2.5)
+- Overall 2.5 re-audit
   
 ## Most significant concept I learned
-SSL stripping: downgrade attack coupled with on-path attack. Attacker uses a proxy to sit between a browser and a server during communication initiation, the browser first sends a message to the server using http, the server respond asking to switch to https before continuing, the attacker refuse to send that response to the browser and the browser keeps sending the attacker plaintext HTTP, while the attacker separately maintains a genuine HTTPS session with the server - appearing as the real client to the server, and as the server to the browser.
+Emergency out-of-bound updates: patches that are issued outside the normal predictable patches window (like Microsoft's patch Tuesday) because a critical vulnerability have been discovered and/or is actively being exploited while the organization can not afford to wait for the next patch update cycle. 
 
 ## Most useful confusion I resolved
-Thought birthday attack is when an attacker is given a specific hash to find it's corresponding input. Resolved: that is called a preimage attack. A birthday attack is much easier - computing hashes with multiple inputs (messages, files, videos) to discover at least 2 with the same hashes, backed by the birthday paradox - in a room of 23 people there's a 50% chance 2 share the same birthday. An attacker that discovers 2 inputs with the same hashes can substitute one for the other, failing integrity verification entirely.
+Had a problem differentiating mitigation techniques vs hardening techniques, confused their examples together as same scope - patching, endpoint protection, monitoring, segmentation, least privilege, isolation. Resolved it: mitigation techniques is the broader scope - actions or policies implemented to reduce organizational risk (least privilege, patching updates, segmentation, access control, monitoring, encryption, decommissioning, configuration enforcement). Hardening techniques are implemented to reduce the attack surface of individual systems or devices (disabling unused ports/services, removal of unnecessary software, configuring EDR or antivirus/antimalware, HIPS, host-based firewall - like Microsoft Firewall Defender). The core distinction is broader organization system protection vs individual system protection.
 
 ## Honest reflection on the week
-External factors repeatedly affecting the minimum viable rule (20-mins review); on the 4th I had water unexpectedly leaking from my room's ceiling and had to fix it, water scarcity, no electricity, stomach constipation, cringe feeling continuously because Malltiply went live on public channels (beyond warm network), and physically exhausted after coming back from Friday worship (Jummu'ah) all on the same day making review even harder. But the rule still held across 3 days, Messer lessons on the 5th (closing 2.4), and tryhackme on 6th. 
+
 
 Review days: 3rd, 8th & 9th 
 
