@@ -13,7 +13,7 @@ Emergency out-of-bound updates: patches that are issued outside the normal predi
 Had a problem differentiating mitigation techniques vs hardening techniques, confused their examples together as same scope - patching, endpoint protection, monitoring, segmentation, least privilege, isolation. Resolved it: mitigation techniques is the broader scope - actions or policies implemented to reduce organizational risk (least privilege, patching updates, segmentation, access control, monitoring, encryption, decommissioning, configuration enforcement). Hardening techniques are implemented to reduce the attack surface of individual systems or devices (disabling unused ports/services, removal of unnecessary software, configuring EDR or antivirus/antimalware, HIPS, host-based firewall - like Microsoft Firewall Defender). The core distinction is broader organization system protection vs individual system protection.
 
 ## Honest reflection on the week
-
+Fastest domain to complete (2.5) since domain 2.1 
 
 Review days: 3rd, 8th & 9th 
 
