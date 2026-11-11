@@ -6,7 +6,7 @@
 - 3.1 reviews (MVR)
   
 ## Most significant concept I learned
-Elasticity is automatic scaling up and back down with demand (like more servers during flash sale and less servers after). 
+Elasticity is a system automatically scaling up and back down with demand (like more servers during flash sale and less servers after). 
 
 ## Most useful confusion I resolved
 Traced microservices directly to MERN after understanding what it means. Thought they're the same thing or MERN uses microservices. RESOLVED IT: MERN is a technology stack and it can be a monolith (one big application) or backend with microservices. Microservices are small, independently deployable services that can run and be deployed on their own behind API gateways, not an instance of MERN.
