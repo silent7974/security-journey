@@ -6,10 +6,10 @@
 - 3.1 reviews (MVR)
   
 ## Most significant concept I learned
-Elasticity is how fast a system can scale up automatically when there's a lot of demand (like more servers during flash sale) and scale back down when there's less demand. 
+Elasticity is automatic scaling up and back down with demand (like more servers during flash sale and less servers after). 
 
 ## Most useful confusion I resolved
-Traced microservices directly to MERN after understanding what it means. Thought they're the same thing or MERN uses microservices. RESOLVED IT: MERN is a technology stack and it can be a monolith (one big application) or backend with microservices. Microservices are independent functions that can run and be deployed on their own behind API gateways, not an instance of MERN.
+Traced microservices directly to MERN after understanding what it means. Thought they're the same thing or MERN uses microservices. RESOLVED IT: MERN is a technology stack and it can be a monolith (one big application) or backend with microservices. Microservices are small, independently deployable services that can run and be deployed on their own behind API gateways, not an instance of MERN.
 
 ## Most significant realization
 "Later" is not a plan. Twice now I've pushed a small task to later - in week 14 a review I said I'd do that night (never happened), and this week a log I said I'd write after a nap (never happened, and I didn't nap either). The version of me that exists later is not more disciplined than the one here now. If it can't happen now, it needs a smaller version now - not a promise.
