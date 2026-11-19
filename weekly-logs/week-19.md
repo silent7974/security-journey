@@ -1,4 +1,4 @@
-# Week 19: 25th October - 9th November 2026
+# Week 19: 10th - 19th November 2026
 
 ## What I covered this week
 - Messer on 3.1 - Infrastructure concepts & considerations
