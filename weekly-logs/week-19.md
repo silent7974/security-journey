@@ -1,47 +1,56 @@
 # Week 19: 10th - 19th November 2026
 
 ## What I covered this week
-- Messer on 3.1 - Infrastructure concepts & considerations
-- 3.1 re-audit - 15 questions (15 mins timer)
-- 3.1 reviews (MVR)
+- Domain 3.2 - self-audit, all Messer videos (secure infrastructure, intrusion prevention, network appliances, port security, firewall types, secure communication), cold re-audit (15 questions - untimed), 7-item gap retest
+- Domain 3.3 - cold audit and all Messer videos (data types & classification, data states, data protection, locations, methods)
+- SSL stripping cold recall; 1 of 3 older-concept recalls done
+- Concept-notes review (iac, race conditions, logic bomb) as MVR
   
 ## Most significant concept I learned
-Elasticity is a system automatically scaling up and back down with demand (like more servers during flash sale and less servers after). 
+**Failure mode:** It describes what a system does when it breaks. Fail-open allows access to resources or services, so availability wins. Fail-closed denies access, so security wins. It's a design tradeoff set by what that deployment prioritises.
 
 ## Most useful confusion I resolved
-Traced microservices directly to MERN after understanding what it means. Thought they're the same thing or MERN uses microservices. RESOLVED IT: MERN is a technology stack and it can be a monolith (one big application) or backend with microservices. Microservices are small, independently deployable services that can run and be deployed on their own behind API gateways, not an instance of MERN.
+**IPsec tunnel mode:** never understood why another IP header is added. RESOLVED IT: an outer IP header carries the VPN endpoints' public addresses allowing the payload (the original header and data) to cross the internet safely. An IPsec header and trailer are also added to give information on how to decrypt and verify it.
 
 ## Most significant realization
-"Later" is not a plan. Twice now I've pushed a small task to later - in week 14 a review I said I'd do that night (never happened), and this week a log I said I'd write after a nap (never happened, and I didn't nap either). The version of me that exists later is not more disciplined than the one here now. If it can't happen now, it needs a smaller version now - not a promise.
+Focus lists are over-scoped by design. Every week sets seven or eight items against a 2-3 hour daily budget, and every week three or four carry over. Mostly been reading that carry-over as a discipline problem. It's arithmetic. If objective closure takes the pace the checkpoint requires, then the sim, the THM rooms, the concept-note and the cold recalls cannot also fit in the same week. The carry-over is what a seven-item list looks like against the time I actually have. The fix isn't more willpower - it's a list designed for the budget: ranked, with the bottom items carrying by default instead of by surprise.
 
 ## Honest reflection on the week
-Extended to 15 days instead of capping at 10 days max (3rd November), and didn't even start 3.2 (checkpoint still 0/12 against the goal of completing Domains 3 & 4 by 15th January - 12 objectives in 9.5 weeks, about 1.25 per week required now). Watched Messer on 26th & 27th, and 3.1 re-audit started on the 4th and completed on the 6th because I slept midway. 3 end-of-month planned recovery and 3 excused Sundays - overall 6 days were excused days. 2 days survived an MVR, and 4 gap days. 
+The 10-day cap held for the first time in three weeks - 3.2 closed end-to-end across four sessions (10th audit → 12–13th Messer → 14th re-audit → 16th gap retest). 3.3 started the day 3.2's retest finished - the pace required stayed at ~1.3/week rather than spiking, because progress matched elapsed time. The cake vendor's Bumpa store setup closed on the 11th and is no longer a blocker. The 16th was partly lost to anxiety over the first Malltiply intro shoot.
 
-Active days: 26th-27th Oct, 6th Nov
+Active days: 10th, 12th, 13th, 14th, 16th (partly lost to the intro shoot anxiety), 17th, 18th, 19th
 
-Review days: 2nd & 3rd Nov
+Review days: 11th (concept-notes review)
 
-Gap days: 28th Oct (Malltiply enquiries & orders), 4th Nov (audit interrupted by sleep), 5th Nov (Bumpa store setup - awaiting client inputs to close), 7th Nov (sister's visiting day)
+Excused Sundays: 15th
 
-Planned recovery: 29th-31st Oct
-
-Excused Sundays: 25th Oct, 1st Nov, 8th Nov
+Gap days: None
 
 ## Standout Re-audit moment
-14/15 with 4.21 mins to spare. Concepts were instantly familiar for every question and scenario except one asking which plane handles configuration under SDN. Answered with "control plane".  
+3.2 cold re-audit: 8 solid, 5 partial, 2 weak of 15. Then the 16th targeted retest - 4 of 7 gaps recovered cleanly in two days, IPsec half, HSTS still blank. The retest is the standout: it's the first time the gap-closing loop ran to completion inside a single week.
 
 Correction from re-audit:
-Management plane is how admins configure devices: SSH, browser, API. Control plane is how forwarding decisions are made. The confusion came from limiting SDN planes as just the control and data plane.
+screened subnet: named, but missed why - internet-reachable servers sit there so a compromise doesn't land inside.
 
-### External factors affecting execution
-Extended morning disruption (3 times this week), Malltiply enquiries & orders (strangers ordering for the first time), Bumpa store polish and setup (cake vendor client), health.
+reverse proxy: had it 12th, lost it 14th - sits in front of servers and receives inbound client requests on their behalf, hiding the backends.
+
+UTM main drawback: performance hit + single point of failure not "Layer 4 only"
+
+TLS VPN: passes firewalls via 443, not because it's encrypted 
+
+802.1X roles and framework carrier: the roles are the supplicant (client), the authenticator (switch or AP) and the authentication server (RADIUS). EAP is the framework that carries the credentials and methods.
+
+Tunnel mode: See Most useful confusion above.
+
+### What was deferred
+Traded for objective closure, not blocked: Practice sim, 2 THM rooms, concept-note, and cold recalls beyond SSL stripping. 
 
 ## Next week focus
-- Domain 3.2 cold audit and lessons (carry-over. Checkpoint - 0/12)
-- Messer on 3.2
+- Domain 3.3 re-audit (Checkpoint - 1.8/12)
+- Domain 3.4 (self-audit, Messer sessions, & cold re-audit)
+- Cold-recall check on 1 older concept during the re-audit (logic bomb)
 - Practice questions simulation across domains 1-3.2 
-- Tryhackme OS basics (at least 2 rooms - carry over)
-- One concept-notes log (carry-over)
-- Cold-recall check on 3 older concepts (SSL stripping first - carry over)
-- Weekly log capped at 10 days (closes by 19th November)
+- Tryhackme OS basics (at least 2 rooms - carry over, only if the required weekly pace is met)
+- SSL stripping concept-notes log (carry-over, only if the required weekly pace is met)
+- Weekly log capped at 10 days (closes by 29th November)
 - Sunday exempted from execution
