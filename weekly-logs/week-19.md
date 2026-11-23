@@ -1,7 +1,7 @@
 # Week 19: 10th - 19th November 2026
 
 ## What I covered this week
-- Domain 3.2 - self-audit, all Messer videos (secure infrastructure, intrusion prevention, network appliances, port security, firewall types, secure communication), cold re-audit (15 questions - untimed), 7-item gap retest
+- Domain 3.2 - self-audit, all Messer videos (secure infrastructure, intrusion prevention, network appliances, port security, firewall types, secure communication), cold re-audit (15 questions - first 8 timed, rest untimed), 7-item gap retest
 - Domain 3.3 - cold audit and all Messer videos (data types & classification, data states, data protection, locations, methods)
 - SSL stripping cold recall; 1 of 3 older-concept recalls done
 - Concept-notes review (iac, race conditions, logic bomb) as MVR
@@ -16,7 +16,7 @@
 Focus lists are over-scoped by design. Every week sets seven or eight items against a 2-3 hour daily budget, and every week three or four carry over. Mostly been reading that carry-over as a discipline problem. It's arithmetic. If objective closure takes the pace the checkpoint requires, then the sim, the THM rooms, the concept-note and the cold recalls cannot also fit in the same week. The carry-over is what a seven-item list looks like against the time I actually have. The fix isn't more willpower - it's a list designed for the budget: ranked, with the bottom items carrying by default instead of by surprise.
 
 ## Honest reflection on the week
-The 10-day cap held for the first time in three weeks - 3.2 closed end-to-end across four sessions (10th audit → 12–13th Messer → 14th re-audit → 16th gap retest). 3.3 started the day 3.2's retest finished - the pace required stayed at ~1.3/week rather than spiking, because progress matched elapsed time. The cake vendor's Bumpa store setup closed on the 11th and is no longer a blocker. The 16th was partly lost to anxiety over the first Malltiply intro shoot.
+The first capped week that held (week 18 ran 15 days) - 3.2 closed end-to-end across four sessions (10th audit → 12–13th Messer → 14th re-audit → 16th gap retest). 3.3 started the day after 3.2's retest finished - the pace required stayed at ~1.3/week rather than spiking, because progress matched elapsed time. The cake vendor's Bumpa store setup closed on the 11th and is no longer a blocker. The 16th was partly lost to anxiety over the first Malltiply intro shoot.
 
 Active days: 10th, 12th, 13th, 14th, 16th (partly lost to the intro shoot anxiety), 17th, 18th, 19th
 
@@ -46,7 +46,7 @@ Tunnel mode: See Most useful confusion above.
 Traded for objective closure, not blocked: Practice sim, 2 THM rooms, concept-note, and cold recalls beyond SSL stripping. 
 
 ## Next week focus
-- Domain 3.3 re-audit (Checkpoint - 1.8/12)
+- Domain 3.3 re-audit (1/12 closed - 3.3 counts after its re-audit, carry-overs retest under the re-audit)
 - Domain 3.4 (self-audit, Messer sessions, & cold re-audit)
 - Cold-recall check on 1 older concept during the re-audit (logic bomb)
 - Practice questions simulation across domains 1-3.2 
